@@ -2,6 +2,7 @@
 
 set -ue
 
+rm -f hackage-mirror hackage-mirror.bz2
 wget https://s3.amazonaws.com/stackage-travis/hackage-mirror/hackage-mirror.bz2
 bunzip2 hackage-mirror.bz2
 chmod +x hackage-mirror
